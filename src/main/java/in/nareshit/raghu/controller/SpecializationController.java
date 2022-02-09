@@ -2,6 +2,7 @@ package in.nareshit.raghu.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import in.nareshit.raghu.service.ISpecializationService;
@@ -11,4 +12,9 @@ public class SpecializationController {
 
 	@Autowired
 	private ISpecializationService service;
+	//1. Show Register Page
+			@GetMapping("/register")
+			public String showReg() {
+				return "SpecializationRegister";
+			}
 }

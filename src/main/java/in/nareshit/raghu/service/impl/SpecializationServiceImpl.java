@@ -2,6 +2,7 @@ package in.nareshit.raghu.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import in.nareshit.raghu.repo.SpecializationRepository;
 import in.nareshit.raghu.service.ISpecializationService;
@@ -10,6 +11,7 @@ public class SpecializationServiceImpl implements ISpecializationService{
 	
 	@Autowired
 private SpecializationRepository repo;
+	
 	
 	
 }
