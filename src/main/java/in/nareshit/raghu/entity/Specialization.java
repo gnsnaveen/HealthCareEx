@@ -20,6 +20,7 @@ public class Specialization {
 	@Column(name="spec_id_col")
 	private Long specId;
 	
+	
 	@Column(name="spec_code_col")
 	private String specCode;
 	
@@ -28,4 +29,37 @@ public class Specialization {
 	
 	@Column(name="spec_note_col")
 	private String specNote;
+	
+	public Long getSpecId() {
+		return specId;
+	}
+
+	public void setSpecId(Long specId) {
+		this.specId = specId;
+	}
+
+	public String getSpecCode() {
+		return specCode;
+	}
+
+	public void setSpecCode(String specCode) {
+		this.specCode = specCode;
+	}
+
+	public String getSpecName() {
+		return specName;
+	}
+
+	public void setSpecName(String specName) {
+		this.specName = specName;
+	}
+
+	public String getSpecNote() {
+		return specNote;
+	}
+
+	public void setSpecNote(String specNote) {
+		this.specNote = specNote;
+	}
+
 }
