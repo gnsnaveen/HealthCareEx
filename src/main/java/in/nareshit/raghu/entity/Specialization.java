@@ -62,4 +62,10 @@ public class Specialization {
 		this.specNote = specNote;
 	}
 
+	@Override
+	public String toString() {
+		return "Specialization [specId=" + specId + ", specCode=" + specCode + ", specName=" + specName + ", specNote="
+				+ specNote + "]";
+	}
+
 }

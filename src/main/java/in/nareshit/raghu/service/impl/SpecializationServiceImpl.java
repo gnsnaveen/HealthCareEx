@@ -1,8 +1,9 @@
 package in.nareshit.raghu.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import in.nareshit.raghu.entity.Specialization;
 import in.nareshit.raghu.repo.SpecializationRepository;
@@ -14,15 +15,24 @@ public class SpecializationServiceImpl implements ISpecializationService{
 private SpecializationRepository repo;
 
 	@Override
-	public Long saveSpecialization(Specialization specialization) {
+	public Long saveSpecialization(Specialization obj) {
 		// TODO Auto-generated method stub
 		
-		specialization = repo.save(specialization);
-		return specialization.getSpecId();
+		obj = repo.save(obj);
+		return obj.getSpecId();
 		
+		
+	}@Override
+	public void deleteSpecialization(Long id) {
+		// TODO Auto-generated method stub
+		repo.deleteById(id);
 		
 	}
 	
-	
+	@Override
+	public List<Specialization> getAllSpecializations() {
+		List<Specialization> list =  repo.findAll();
+		return list;
+	}
 	
 }
