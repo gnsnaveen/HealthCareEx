@@ -12,4 +12,6 @@ public interface ISpecializationService {
 
 	void deleteSpecialization(Long id);
 
+	Specialization getOneSpecialization(Long id);
+
 }
