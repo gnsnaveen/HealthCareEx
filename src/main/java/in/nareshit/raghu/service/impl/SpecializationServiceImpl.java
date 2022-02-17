@@ -19,7 +19,8 @@ private SpecializationRepository repo;
 	public Long saveSpecialization(Specialization obj) {
 		// TODO Auto-generated method stub
 		
-		obj = repo.save(obj);
+		
+		obj = repo.save(obj);		
 		return obj.getSpecId();
 		
 		
